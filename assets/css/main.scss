@@ -7,3 +7,10 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// 专门针对文章正文区域
+.page__content {
+  p, li {
+    font-size: 0.7rem;   // 调整段落和列表的字号
+  }
+}
