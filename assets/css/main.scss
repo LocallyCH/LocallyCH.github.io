@@ -7,8 +7,8 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 
-$type-size-4: 0.7rem; // 调整正文字号（默认通常是 1rem）
-$type-size-1: 1.8rem;    // 调整特大标题字号
+$type-size-4: 1rem; // 调整正文字号（默认通常是 1rem）
+$type-size-1: 1.4rem;    // 调整特大标题字号
 @import "minimal-mistakes"; // main partials
 
 // 专门针对文章正文区域
