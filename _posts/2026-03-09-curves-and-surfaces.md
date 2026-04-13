@@ -22,21 +22,28 @@ tags:
 第一基本形式可认为是“度量张量”，输入两个向量得到的就是它们的内积。这使我们能够谈论曲面上的长度、面积等概念。
 
 考虑用参数坐标相关的量来描述第一基本形式。对平面中开区域 $U$ ，我们将其中的点 $u$ 坐标记为 $(s, t)$ 。由于对 $p \in U$ ，函数 $\phi : U \rightarrow \mathbb{R}^3$ 给出曲面在 $\phi(p)$ 处切平面的一组基 $\{\phi_s, \phi_t\}$ ，于是第一基本形式可以表示为（尖括号表示内积）：
+
 $$
 g_{ij} = \langle \phi_i, \phi_j \rangle
 $$
+
 下面考虑如何描述曲面的弯曲，并引入第二基本形式。正则参数曲面片总可以定向，曲面上各点处可以全部取“在曲面同一侧”的单位法向量，用这个想法定义单位法向量和高斯映射 $\mathcal{G}: U \rightarrow \mathbb{S}^2$ 如下：
+
 $$ 
 \mathbf{n}(u) = \frac{\phi_s(u) \times \phi_t(u)}{\left\| \phi_s(u) \times \phi_t(u) \right\|}
 \\
 $$
+
 $$
 \mathcal{G}(u) = \mathbf{n}(u)
 $$
+
 为刻画曲面的弯曲行为，自然可以问：在曲面上移动一段距离之后，法向量变化了多少？
 
 熟知 $\phi$ 诱导出 $u$ 处切空间 $T_uU$ 到 $\phi(u)$ 处切平面 $T_u\phi$ 的切映射，这个切映射给出两者的线性同构。所以，我们可以把 $T_u\phi$ 中的元素拉回 $T_uU$ 中，再作用一个高斯映射的切映射，得到的就是 $\mathbf{n}$ 的变化。Weingarten映射 $W: T_u\phi \rightarrow T_u\phi$ 的定义与上面的想法一致，只是出于习惯加了一个负号：
+
 $$
 W = -\left(D\mathcal{G}\big|_{u}\right)\circ\left(D\phi\big|_{u}\right)^{-1}
 $$
+
 可以证明 $W$ 是自伴算子，因此可对角化。
