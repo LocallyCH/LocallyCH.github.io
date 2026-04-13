@@ -81,7 +81,7 @@ $$
 第二基本形式定义成
 
 $$
-II(X, Y) = \langle W(x), Y \rangle
+II(X, Y) = \langle W(X), Y \rangle
 $$
 
 由上可以直接得到基 $\{\frac{\partial \phi}{\partial u^1}, \frac{\partial \phi}{\partial u^2}\}$ 下第二基本形式的表达式：
