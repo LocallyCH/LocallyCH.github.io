@@ -1,6 +1,7 @@
 ---
 title: 【自用】高等代数读书笔记
 excerpt: 读书自学尝试记录一些自认为有收获的内容，主要供自用，并不完整或系统。主要的参考书目是Hoffman&Kunze所著的Linear Algebra (2nd ed)。
+mathjax: "true"
 ---
 # Ch6 Elementary Canonical Forms
 
