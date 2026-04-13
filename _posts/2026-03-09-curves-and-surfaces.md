@@ -76,7 +76,7 @@ W\left(\frac{\partial \phi}{\partial u^i}\right), \frac{\partial \phi}{\partial 
 \right\rangle
 $$
 
-（最后一项显然关于 $s$ 和 $t$ 对称）
+（最后一项显然关于 $i$ 和 $j$ 对称）
 
 第二基本形式定义成
 
