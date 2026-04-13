@@ -13,18 +13,18 @@ search: false
 /* 自定义文章正文内的标题字号 */
 .page__content {
   h1 {
-    font-size: 1.5em; // 原始通常是 2em 或更大
+    font-size: 1.5em !important; // 原始通常是 2em 或更大
   }
   h2 {
-    font-size: 1.25em;
+    font-size: 1.25em !important;
   }
   h3 {
-    font-size: 1.15em;
+    font-size: 1.15em !important;
   }
   h4 {
-    font-size: 1.05em;
+    font-size: 1.05em !important;
   }
   p, li {
-    font-size: 0.9rem;   // 调整段落和列表的字号
+    font-size: 0.9rem !important;   // 调整段落和列表的字号
   }
 }
