@@ -25,7 +25,7 @@ mathjax: "true"
 考虑用参数坐标相关的量来描述第一基本形式。对平面中开区域 $U$ ，我们将其中的点 $u$ 坐标记为 $(u^1, u^2)$ 。由于对 $p \in U$ ，函数 $\phi : U \rightarrow \mathbb{R}^3$ 给出曲面在 $\phi(p)$ 处切平面的一组基 $\{\frac{\partial \phi}{\partial u^1}, \frac{\partial \phi}{\partial u^2}\}$ ，于是第一基本形式可以表示为（尖括号表示内积）：
 
 $$
-g_{ij} = \langle \frac{\partial \phi}{\partial u^i}, \frac{\partial \phi}{\partial u^j} \rangle
+g_{ij} = \left\langle \frac{\partial \phi}{\partial u^i}, \frac{\partial \phi}{\partial u^j} \right\rangle
 $$
 
 下面考虑如何描述曲面的弯曲，并引入第二基本形式。正则参数曲面片总可以定向，曲面上各点处可以全部取“在曲面同一侧”的单位法向量，用这个想法定义单位法向量和高斯映射 $\mathcal{G}: U \rightarrow \mathbb{S}^2$ 如下：
