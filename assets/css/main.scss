@@ -10,7 +10,20 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 // 专门针对文章正文区域
+/* 自定义文章正文内的标题字号 */
 .page__content {
+  h1 {
+    font-size: 1.5em; // 原始通常是 2em 或更大
+  }
+  h2 {
+    font-size: 1.25em;
+  }
+  h3 {
+    font-size: 1.15em;
+  }
+  h4 {
+    font-size: 1.05em;
+  }
   p, li {
     font-size: 0.9rem;   // 调整段落和列表的字号
   }
