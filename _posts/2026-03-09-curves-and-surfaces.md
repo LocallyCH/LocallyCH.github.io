@@ -14,9 +14,11 @@ mathjax: "true"
 
 ## 空间曲线论
 
-内容较少，未完待续
+内容较少，主要包含Frenet标架和Frenet方程。
 
 ## 空间曲面论
+
+### 第一和第二基本形式
 
 我们主要讨论 $\mathbb{E}^3$ 中的正则参数曲面片，需要用到直接从欧氏空间 $\mathbb{R}^3$ 中继承而来的内积。
 
@@ -97,3 +99,35 @@ h_{ij} = \left\langle
 \frac{\partial \phi}{\partial u^j}
 \right\rangle
 $$
+
+### 曲面的曲率
+
+对曲面上的弧长参数曲线 $\gamma$ ，由于 $\ddot{\gamma} \perp \dot{\gamma}$ ，有如下的分解：
+
+$$
+\ddot{\gamma} = \kappa_n \mathbf{n} + \kappa_g \mathbf{n} \times \dot{\gamma}
+$$
+
+其中，$\kappa_n$ 只取决于单位切向量 $\dot{\gamma}$ ：
+
+$$
+\kappa_n = \langle \ddot{\gamma}, \mathbf{n} \rangle =
+- \left\langle
+\dot{\gamma}, \frac{\partial \mathbf{n}}{\partial s}
+\right\rangle
+=
+\langle \dot{\gamma}, W(\dot{\gamma}) \rangle
+= II(\dot{\gamma}, \dot{\gamma})
+$$
+
+Weingarten映射的两个特征值 $\kappa_1, \kappa_2$ 即为主曲率。相应的特征向量的线向为主方向，且主方向上的单位切向量能使得 $II(\dot{\gamma}, \dot{\gamma})$ 取到极值。
+平均曲率 $H$ 和Gauss曲率 $K$ 的定义如下：
+
+$$
+H = \frac{1}{2} tr(W) = \frac{1}{2}(\kappa_1 + \kappa_2)
+$$
+
+$$
+K = det(W) = \kappa_1 \kappa_2
+$$
+
